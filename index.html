@@ -1,0 +1,134 @@
+<script>let telegramUsername = "@alexandr_profitt"; document.addEventListener("DOMContentLoaded", function() { let links = document.querySelectorAll(".tg-link"); links.forEach(function(link) { link.href = "https://t.me" + telegramUsername; }); });</script>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRO-Check | Удаленная подработка</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        body { background-color: #000000; color: #ffffff; padding: 20px; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+        .container { max-width: 450px; width: 100%; padding-bottom: 40px; }
+        
+        /* ШАПКА ПРОФИЛЯ */
+        .header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 25px; padding: 0 5px; }
+        .profile { display: flex; align-items: center; gap: 12px; }
+        .avatar { width: 48px; height: 48px; background: linear-gradient(135deg, #6366f1, #a855f7); border-radius: 50%; display: flex; justify-content: center; align-items: center; font-weight: bold; font-size: 18px; color: #fff; }
+        .meta h3 { font-size: 16px; font-weight: 600; }
+        .meta p { font-size: 12px; color: #8b8b9f; margin-top: 2px; }
+        .status-badge { background: rgba(34, 197, 94, 0.1); color: #22c55e; padding: 6px 12px; border-radius: 20px; font-size: 12px; font-weight: 500; display: flex; align-items: center; gap: 6px; }
+        .status-dot { width: 6px; height: 6px; background-color: #22c55e; border-radius: 50%; }
+        
+        .main-title { font-size: 28px; font-weight: 700; line-height: 1.2; margin-bottom: 20px; padding-left: 5px; background: linear-gradient(to right, #fff, #b9bbbe); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .description { font-size: 14px; color: #aeaebf; line-height: 1.5; margin-bottom: 30px; padding-left: 5px; }
+        
+        h2.section-title { font-size: 24px; font-weight: 700; margin-top: 35px; margin-bottom: 15px; padding-left: 5px; color: #ffffff; }
+        .section-desc { font-size: 14px; color: #69697e; margin-bottom: 20px; padding-left: 5px; line-height: 1.4; }
+
+        /* БЛОК ПАРТНЕРСТВО */
+        .partners-grid { display: flex; flex-wrap: wrap; gap: 8px; padding-left: 5px; margin-bottom: 10px; }
+        .partner-tag { background: #0d0d12; border: 1px solid #1c1c24; color: #a3a3b3; padding: 10px 18px; border-radius: 20px; font-size: 14px; font-weight: 500; }
+
+        /* БЛОК ВАКАНСИЙ */
+        .services-list { display: flex; flex-direction: column; margin-bottom: 10px; }
+        .service-row { display: flex; justify-content: space-between; align-items: center; padding: 20px 5px; border-top: 1px solid #1c1c24; text-decoration: none; color: inherit; }
+        .service-row:last-child { border-bottom: 1px solid #1c1c24; }
+        .service-info h4 { font-size: 16px; font-weight: 600; color: #ffffff; margin-bottom: 4px; }
+        .service-info p { font-size: 13px; color: #8b8b9f; }
+        .service-arrow { font-size: 16px; color: #4b4b63; transition: transform 0.2s ease; }
+        .service-row:hover .service-arrow { color: #ffffff; transform: translateX(3px); }
+
+        /* БЛОК ОТЗЫВОВ */
+        .review-card { background: #0d0d12; border: 1px solid #1c1c24; border-radius: 20px; padding: 20px; margin-bottom: 12px; }
+        .review-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+        .review-name { font-size: 15px; font-weight: 600; color: #ffffff; }
+        .stars { color: #6366f1; font-size: 14px; letter-spacing: 2px; }
+        .review-text { font-size: 14px; color: #8b8b9f; line-height: 1.5; }
+
+        /* ГЛАВНАЯ КНОПКА ДЕЙСТВИЯ */
+        .btn-main { display: block; width: 100%; background: #ffffff; color: #000000; text-align: center; padding: 16px; border-radius: 16px; font-size: 16px; font-weight: 600; text-decoration: none; margin-top: 30px; box-shadow: 0 4px 15px rgba(255,255,255,0.1); }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <div class="profile">
+            <div class="avatar">ДК</div>
+            <div class="meta">
+                <h3>Данила Кравцов</h3>
+                <p>Координатор проектов</p>
+            </div>
+        </div>
+        <div class="status-badge">
+            <div class="status-dot"></div>
+            Набор открыт
+        </div>
+    </div>
+
+    <h1 class="main-title">Подработка:<br>Тайный покупатель</h1>
+    <p class="description">Привет! Наша команда проводит независимый аудит стандартов качества крупнейших коммерческих компаний и сервисов доставки в РФ. Ищем проверяющих от 14 лет для выполнения несложных тестов.</p>
+
+    <h2 class="section-title">Партнёрство</h2>
+    <p class="section-desc">Проводим регулярные проверки и контролируем стандарты сервиса популярных торговых сетей и служб доставки.</p>
+    <div class="partners-grid">
+        <div class="partner-tag">Самокат</div>
+        <div class="partner-tag">ВкусВилл</div>
+        <div class="partner-tag">Бургер Кинг</div>
+        <div class="partner-tag">Додо Пицца</div>
+        <div class="partner-tag">Яндекс Лавка</div>
+        <div class="partner-tag">Пятёрочка</div>
+        <div class="partner-tag">Магнит</div>
+    </div>
+
+    <h2 class="section-title">Текущие задания</h2>
+    <div class="services-list">
+        <a href="#" class="service-row tg-link">
+            <div class="service-info">
+                <h4>Тест №1: Аудит курьерской службы Альфа-Банка</h4>
+                <p>Оплата: от 1000 ₽ • Статус: Срочно</p>
+            </div>
+            <div class="service-arrow">➔</div>
+        </a>
+        <a href="#" class="service-row tg-link">
+            <div class="service-info">
+                <h4>Тест №2: Проверка качества сервисов Т-Банка</h4>
+                <p>Оплата: от 1200 ₽ • Доступно после Теста №1</p>
+            </div>
+            <div class="service-arrow">➔</div>
+        </a>
+        <a href="#" class="service-row tg-link">
+            <div class="service-info">
+                <h4>Тест №3: Аудит доставки продуктов (Самокат/Лавка)</h4>
+                <p>В разработке • Доступно для постоянных агентов</p>
+            </div>
+            <div class="service-arrow">➔</div>
+        </a>
+    </div>
+
+    <h2 class="section-title">Отзывы</h2>
+    <div class="review-card">
+        <div class="review-header">
+            <div class="review-name">Алина</div>
+            <div class="stars">★★★★★</div>
+        </div>
+        <div class="review-text">
+            Спасибо большое за подработку! Выплату за аудит Альфы получила прямо на карту сразу после отправки скриншотов. Всё честно, инструкции очень понятные, заняло минут 15.
+        </div>
+    </div>
+
+    <div class="review-card">
+        <div class="review-header">
+            <div class="review-name">Максим</div>
+            <div class="stars">★★★★★</div>
+        </div>
+        <div class="review-text">
+            Лучшая тема для студентов, у кого мало времени. Данила всегда на связи, помог разобраться с первой проверкой. Деньги пришли быстро, жду когда откроют тесты по магазинам доставки.
+        </div>
+    </div>
+
+    <a href="#" class="btn-main tg-link">Взять задание в работу</a>
+</div>
+
+</body>
+</html>
